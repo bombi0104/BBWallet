@@ -1,0 +1,3 @@
+rootProject.name = 'BBWallet'
+
+include ':app'
