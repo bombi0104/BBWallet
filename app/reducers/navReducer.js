@@ -1,5 +1,6 @@
 import { PUSH_ROUTE, POP_ROUTE } from '../constants/ActionTypes'
 import { NavigationExperimental } from 'react-native'
+import Enums from '../constants/Enums'
 const {
   StateUtils: NavigationStateUtils
 } = NavigationExperimental
@@ -8,8 +9,8 @@ const initialState = {
   index: 0,
   key: 'root',
   routes: [{
-   key: 'home',
-   title: 'Home'
+   key: Enums.SCREENS.CREATE_RESTORE_WALLET,
+   title: Enums.SCREENS.CREATE_RESTORE_WALLET
   }]
 }
 

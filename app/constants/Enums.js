@@ -1,0 +1,7 @@
+export default {
+    SCREENS : {
+        CREATE_RESTORE_WALLET : 'CREATE_RESTORE_WALLET',
+        CREATE_NEW_WALLET : 'CREATE_NEW_WALLET',
+        RESTORE_WALLET : 'RESTORE_WALLET'
+    }
+}
