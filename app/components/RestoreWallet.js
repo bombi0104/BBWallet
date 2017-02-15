@@ -8,6 +8,8 @@ import {
     TouchableWithoutFeedback
 } from 'react-native'
 import { Button } from 'react-native-elements'
+import Util from '../libs/Util'
+import Enum from '../constants/Enums'
 
 export default class RestoreWallet extends Component {
     render() {
@@ -24,7 +26,7 @@ export default class RestoreWallet extends Component {
                         backgroundColor='#9B30EA'
                         title='RESTORE WALLET'
                         buttonStyle={styles.button}
-                        onPress={() => { }} />
+                        onPress={() => { this.props._handleNavigate(Util.routeTo(Enum.SCREENS.WALLET)) }} />
                 </View>
             </TouchableWithoutFeedback>
         )

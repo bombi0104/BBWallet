@@ -5,6 +5,7 @@ import About from './About'
 import CreateRestoreWallet from './CreateRestoreWallet'
 import CreateNewWallet from './CreateNewWallet'
 import RestoreWallet from './RestoreWallet'
+import Wallet from './wallet/Wallet'
 
 import {
   BackAndroid,
@@ -49,6 +50,11 @@ class NavRoot extends Component {
     }
     else if (route.key === Enums.SCREENS.RESTORE_WALLET) {
       return <RestoreWallet
+        _goBack={this._handleBackAction.bind(this)}
+        _handleNavigate={this._handleNavigate.bind(this)} />
+    }
+    else if (route.key === Enums.SCREENS.WALLET) {
+      return <Wallet
         _goBack={this._handleBackAction.bind(this)}
         _handleNavigate={this._handleNavigate.bind(this)} />
     }

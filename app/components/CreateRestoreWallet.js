@@ -25,7 +25,7 @@ export default class CreateRestoreWallet extends Component {
                     backgroundColor='#8CC153'
                     title='CREATE NEW WALLET'
                     buttonStyle={styles.button}
-                    onPress={() => { this.props._handleNavigate(Util.routeTo(Enum.SCREENS.CREATE_NEW_WALLET)) }} />
+                    onPress={() => { this.props._handleNavigate(Util.routeTo(Enum.SCREENS.WALLET)) }} />
             </View>
         )
     }
